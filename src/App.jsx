@@ -11,8 +11,7 @@ export const App =()=> {
   const [bad, setBad] = useState(0);
   const options = ["good", "neutral", "bad"];
 
-  const addFeedback  = (event) => {
-    const {name} = event.target.dataset;
+  const addFeedback  = (name) => {
     switch(name) {
       case "good":
         setGood(good => good + 1);
